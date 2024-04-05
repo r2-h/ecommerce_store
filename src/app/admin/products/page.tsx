@@ -19,7 +19,10 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { ActiveToggleDropdownItem, DeleteDropdownItem } from "./ProductActions"
+import {
+  ActiveToggleDropdownItem,
+  DeleteDropdownItem,
+} from "./_components/ProductActions"
 
 export default function AdminProductsPage() {
   return (
@@ -76,7 +79,7 @@ async function ProductsTable() {
               ) : (
                 <>
                   <span className="sr-only">Unavaliable</span>
-                  <XCircle />
+                  <XCircle className="stroke-destructive" />
                 </>
               )}
             </TableCell>
